@@ -16,6 +16,13 @@ const examples = [
     category: 'State Management',
     tech: 'Zustand',
   },
+  {
+    title: 'Todo List',
+    description: 'Zustand로 구현한 할 일 목록 관리',
+    path: '/zustand/todolist',
+    category: 'State Management',
+    tech: 'Zustand',
+  },
 ];
 
 const categories = [...new Set(examples.map((example) => example.category))];
