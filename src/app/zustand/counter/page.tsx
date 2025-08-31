@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/card';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
-import { useCounterStore } from './store/counterStore';
+import { useCounterStore } from './store/useCounterStore';
 
 export default function CounterPage() {
   const { count, increment, decrement, reset } = useCounterStore();
