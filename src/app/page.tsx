@@ -139,11 +139,6 @@ export default function HomePage() {
                               →
                             </span>
                           </span>
-                          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center group-hover:from-primary/30 group-hover:to-accent/30 transition-colors">
-                            <span className="text-xs font-bold text-primary group-hover:scale-110 transition-transform">
-                              {index + 1}
-                            </span>
-                          </div>
                         </div>
                       </CardContent>
                     </Card>
