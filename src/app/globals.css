@@ -125,3 +125,28 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family: 'NanumSquareNeoLight';
+  src: url('../styles/font/NanumSquareNeo-aLt.ttf');
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  src: url('../styles/font/NanumSquareNeo-bRg.ttf');
+}
+
+@font-face {
+  font-family: 'NanumSquareNeoBold';
+  src: url('../styles/font/NanumSquareNeo-cBd.ttf');
+}
+
+@font-face {
+  font-family: 'NanumSquareNeoExtraBold';
+  src: url('../styles/font/NanumSquareNeo-dEb.ttf');
+}
+
+@font-face {
+  font-family: 'NanumSquareNeoHeavy';
+  src: url('../styles/font/NanumSquareNeo-eHv.ttf');
+}
