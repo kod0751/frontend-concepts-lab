@@ -23,6 +23,13 @@ const examples = [
     category: 'State Management',
     tech: 'Zustand',
   },
+  {
+    title: 'useMemo Hook',
+    description: 'React useMemo 훅 최적화 예제',
+    path: '/ReactHooks/useMemo',
+    category: 'React Hooks',
+    tech: 'React',
+  },
 ];
 
 const categories = [...new Set(examples.map((example) => example.category))];
@@ -36,7 +43,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 rounded-3xl blur-3xl -z-10"></div>
           <div className="relative bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border/50">
             <h1 className="text-5xl font-['NanumSquareNeoBold'] md:text-6xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-6 text-balance">
-              React 예제 모음
+              Frontend Concepts Lab
             </h1>
             <p className="text-xl font-['NanumSquareNeo'] md:text-2xl text-muted-foreground max-w-4xl mx-auto mb-8 text-pretty leading-relaxed">
               상태 관리, JavaScript 개념, React Hooks 등 다양한 주제의 실습
@@ -65,7 +72,7 @@ export default function HomePage() {
             </div>
             <div className="inline-flex items-center gap-2 text-sm font-['NanumSquareNeo'] text-muted-foreground bg-muted/50 px-4 py-2 rounded-full">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              총 {examples.length}개의 실습 예제 제공
+              총 {examples.length}개의 실습 예제
             </div>
           </div>
         </div>
