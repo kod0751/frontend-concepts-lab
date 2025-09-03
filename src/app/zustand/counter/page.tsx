@@ -11,6 +11,7 @@ import {
 import Link from 'next/link';
 import { useCounterStore } from './store/useCounterStore';
 import { Badge } from '@/components/ui/badge';
+import { Minus, Plus, RotateCcw } from 'lucide-react';
 
 export default function CounterPage() {
   const { count, increment, decrement, reset } = useCounterStore();
@@ -28,7 +29,7 @@ export default function CounterPage() {
           <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border/50">
             <div className="flex items-center gap-4 mb-4">
               <div className="w-3 h-8 rounded-full bg-gradient-to-b from-primary to-primary/60"></div>
-              <h1 className="text-4xl font-['NanumSquareNeoBold'] bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <h1 className="text-4xl font-['NanumSquareNeoExtraBold'] bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 Zustand Counter
               </h1>
             </div>
@@ -52,26 +53,79 @@ export default function CounterPage() {
           </div>
         </div>
 
-        <Card className="mb-8">
+        <Card className="mb-8 font-['NanumSquareNeo']">
           <CardHeader>
-            <CardTitle className="font-['NanumSquareNeo']">카운터</CardTitle>
-            <CardDescription className="font-['NanumSquareNeo']">
-              버튼을 클릭하여 카운터 값을 변경해보세요
+            <CardTitle className="flex items-center gap-2">
+              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                <Plus className="w-5 h-5 text-primary" />
+              </div>
+              카운터
+            </CardTitle>
+            <CardDescription>
+              버튼을 클릭하여 카운터 값을 변경해보세요.
             </CardDescription>
           </CardHeader>
-          <CardContent className="text-center font-['NanumSquareNeo'] space-y-6">
-            <div className="text-6xl font-['NanumSquareNeoBold'] text-primary">
+          <CardContent className="text-center space-y-8">
+            <div className="text-8xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               {count}
             </div>
             <div className="flex gap-4 justify-center">
-              <Button onClick={decrement} variant="outline">
-                -1
+              <Button
+                onClick={decrement}
+                variant="outline"
+                size="lg"
+                className="min-w-[120px] bg-transparent"
+              >
+                <Minus className="w-4 h-4 mr-2" />
+                감소
               </Button>
-              <Button onClick={reset} variant="secondary">
-                Reset
+              <Button
+                onClick={reset}
+                variant="secondary"
+                size="lg"
+                className="min-w-[120px]"
+              >
+                <RotateCcw className="w-4 h-4 mr-2" />
+                리셋
               </Button>
-              <Button onClick={increment}>+1</Button>
+              <Button onClick={increment} size="lg" className="min-w-[120px]">
+                <Plus className="w-4 h-4 mr-2" />
+                증가
+              </Button>
             </div>
+          </CardContent>
+        </Card>
+
+        <Card className="font-['NanumSquareNeo']">
+          <CardHeader>
+            <CardTitle>코드 예제</CardTitle>
+            <CardDescription>
+              Zustand를 사용한 상태 관리 구현입니다.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <pre className="bg-muted/50 p-4 rounded-lg overflow-x-auto text-sm">
+              <code>{`const useCounterStore = create<CounterState>((set) => ({
+  count: 0,
+  increment: () => set((state) => ({ count: state.count + 1 })),
+  decrement: () => set((state) => ({ count: state.count - 1 })),
+  reset: () => set({ count: 0 }),
+}))
+
+// 컴포넌트에서 사용
+function Counter() {
+  const { count, increment, decrement, reset } = useCounterStore()
+  
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
+      <button onClick={reset}>Reset</button>
+    </div>
+  )
+}`}</code>
+            </pre>
           </CardContent>
         </Card>
       </div>

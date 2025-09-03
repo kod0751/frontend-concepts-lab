@@ -47,7 +47,7 @@ export default function ZustandTodoListPage() {
           <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border/50">
             <div className="flex items-center gap-4 mb-4">
               <div className="w-3 h-8 rounded-full bg-gradient-to-b from-primary to-primary/60"></div>
-              <h1 className="text-4xl font-['NanumSquareNeoBold'] bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <h1 className="text-4xl font-['NanumSquareNeoExtraBold'] bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 Zustand Todo List
               </h1>
             </div>
