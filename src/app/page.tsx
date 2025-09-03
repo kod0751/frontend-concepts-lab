@@ -24,6 +24,13 @@ const examples = [
     tech: 'Zustand',
   },
   {
+    title: 'Recoil Counter',
+    description: 'Recoil을 활용한 상태 관리 카운터',
+    path: '/Recoil/counter',
+    category: 'State Management',
+    tech: 'Recoil',
+  },
+  {
     title: 'useMemo Hook',
     description: 'React useMemo 훅 최적화 예제',
     path: '/ReactHooks/useMemo',
