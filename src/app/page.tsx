@@ -37,6 +37,13 @@ const examples = [
     category: 'React Hooks',
     tech: 'React',
   },
+  {
+    title: 'useCallback Hook',
+    description: 'React useCallback 훅 최적화 예제',
+    path: '/ReactHooks/useCallback',
+    category: 'React Hooks',
+    tech: 'React',
+  },
 ];
 
 const categories = [...new Set(examples.map((example) => example.category))];
