@@ -80,7 +80,7 @@ export default function HomePage() {
               </Badge>
               <Badge
                 variant="secondary"
-                className="text-base font-['NanumSquareNeo'] px-4 py-2 bg-accent/10 text-accent border-accent/20 hover:bg-accent/20 transition-colors"
+                className="text-base font-['NanumSquareNeo'] px-4 py-2 bg-third/10 text-third border-third/20 hover:bg-third/20 transition-colors"
               >
                 JavaScript Concepts
               </Badge>
@@ -108,7 +108,7 @@ export default function HomePage() {
                     categoryIndex === 0
                       ? 'bg-gradient-to-b from-primary to-primary/60'
                       : categoryIndex === 1
-                      ? 'bg-gradient-to-b from-accent to-accent/60'
+                      ? 'bg-gradient-to-b from-third to-third/60'
                       : 'bg-gradient-to-b from-secondary to-secondary/60'
                   }`}
                 ></div>
@@ -185,7 +185,7 @@ export default function HomePage() {
             <div className="mt-6 flex justify-center gap-2">
               <div className="w-2 h-2 bg-primary rounded-full animate-bounce"></div>
               <div
-                className="w-2 h-2 bg-accent rounded-full animate-bounce"
+                className="w-2 h-2 bg-third rounded-full animate-bounce"
                 style={{ animationDelay: '0.1s' }}
               ></div>
               <div

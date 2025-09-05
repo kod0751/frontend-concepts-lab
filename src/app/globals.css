@@ -15,6 +15,8 @@
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.65 0.2 280); /* Purple accent */
   --secondary-foreground: oklch(1 0 0);
+  --third: oklch(0.65 0.2 43); /* Purple accent */
+  --third-foreground: oklch(1 0 0);
   --muted: oklch(0.98 0 0);
   --muted-foreground: oklch(0.5 0 0);
   --accent: oklch(0.65 0.2 280); /* Purple accent */
@@ -89,6 +91,8 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-third: var(--third);
+  --color-third-foreground: var(--third-foreground);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
