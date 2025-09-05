@@ -31,6 +31,13 @@ const examples = [
     tech: 'Recoil',
   },
   {
+    title: 'Hoisting Example',
+    description: 'JavaScript 호이스팅 개념 실습',
+    path: '/javascript/hoisting',
+    category: 'JavaScript Concepts',
+    tech: 'JavaScript',
+  },
+  {
     title: 'useMemo Hook',
     description: 'React useMemo 훅 최적화 예제',
     path: '/ReactHooks/useMemo',
