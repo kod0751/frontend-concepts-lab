@@ -148,7 +148,7 @@ export default function HomePage() {
                                 : example.tech === 'Recoil'
                                 ? 'bg-accent/10 text-accent border-accent/20'
                                 : example.tech === 'JavaScript'
-                                ? 'bg-yellow-100/10 text-yellow-600 border-yellow-200/20 dark:bg-yellow-900/10 dark:text-yellow-400'
+                                ? 'bg-third/10 text-third border-third/20 dark:bg-third/10 dark:text-third/20'
                                 : 'bg-secondary/10 text-secondary border-secondary/20'
                             }`}
                           >

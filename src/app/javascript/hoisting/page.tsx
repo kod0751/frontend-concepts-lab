@@ -143,7 +143,7 @@ export default function HoistingPage() {
               선언이 스코프의 최상단으로 끌어올려지는 동작을 학습할 수 있습니다.
             </p>
             <div className="flex gap-3 mt-6">
-              <Badge className="bg-yellow-100/10 text-yellow-600 border-yellow-200/20 dark:bg-yellow-900/10 dark:text-yellow-400">
+              <Badge className="bg-third/10 text-third border-third/20 dark:bg-third/10 dark:text-third/20">
                 JavaScript
               </Badge>
             </div>
