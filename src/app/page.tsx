@@ -31,6 +31,13 @@ const examples = [
     tech: 'Recoil',
   },
   {
+    title: 'Closure Example',
+    description: 'JavaScript 클로저 개념 실습',
+    path: '/closure',
+    category: 'JavaScript Concepts',
+    tech: 'JavaScript',
+  },
+  {
     title: 'Hoisting Example',
     description: 'JavaScript 호이스팅 개념 실습',
     path: '/javascript/hoisting',
