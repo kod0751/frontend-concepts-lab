@@ -33,7 +33,7 @@ const examples = [
   {
     title: 'Closure Example',
     description: 'JavaScript 클로저 개념 실습',
-    path: '/closure',
+    path: '/javascript/closure',
     category: 'JavaScript Concepts',
     tech: 'JavaScript',
   },
