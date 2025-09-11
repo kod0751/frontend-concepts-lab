@@ -1,6 +1,6 @@
 'use client';
 
-import { useRecoilState } from 'recoil';
+import { useRecoilState, useRecoilValue } from 'recoil';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -13,9 +13,12 @@ import { Badge } from '@/components/ui/badge';
 import { Plus, Minus, RotateCcw } from 'lucide-react';
 import Link from 'next/link';
 import { counterState } from './atom/counterAtom';
+import { doubleCounterState, isEvenState } from './selectors/counterSelector';
 
 export default function RecoilCounterPage() {
   const [count, setCount] = useRecoilState(counterState);
+  const doubleCount = useRecoilValue(doubleCounterState);
+  const isEven = useRecoilValue(isEvenState);
 
   const increment = () => setCount((prev) => prev + 1);
   const decrement = () => setCount((prev) => prev - 1);
@@ -76,6 +79,15 @@ export default function RecoilCounterPage() {
             <CardContent className="text-center space-y-8">
               <div className="text-8xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 {count}
+              </div>
+              <div className="text-lg text-muted-foreground">
+                2배 값: <span className="font-semibold">{doubleCount}</span>
+              </div>
+              <div className="text-lg text-muted-foreground">
+                짝수 여부:{' '}
+                <span className="font-semibold">
+                  {isEven ? '짝수' : '홀수'}
+                </span>
               </div>
               <div className="flex gap-4 justify-center">
                 <Button
