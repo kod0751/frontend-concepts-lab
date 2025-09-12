@@ -13,7 +13,7 @@ import { Badge } from '@/components/ui/badge';
 import { Plus, Minus, RotateCcw } from 'lucide-react';
 import Link from 'next/link';
 import { counterState } from './atom/counterAtom';
-import { doubleCounterState, isEvenState } from './selectors/counterSelector';
+import { doubleCounterState, isEvenState } from './selector/counterSelector';
 
 export default function RecoilCounterPage() {
   const [count, setCount] = useRecoilState(counterState);
