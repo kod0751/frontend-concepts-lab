@@ -31,6 +31,13 @@ const examples = [
     tech: 'Recoil',
   },
   {
+    title: 'Todo List',
+    description: 'Recoil selector를 활용한 할 일 목록',
+    path: '/recoil/todolist',
+    category: 'State Management',
+    tech: 'Recoil',
+  },
+  {
     title: 'Closure Example',
     description: 'JavaScript 클로저 개념 실습',
     path: '/javascript/closure',
