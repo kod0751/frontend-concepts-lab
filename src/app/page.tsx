@@ -33,7 +33,7 @@ const examples = [
   {
     title: 'Todo List',
     description: 'Recoil selector를 활용한 할 일 목록',
-    path: '/recoil/todolist',
+    path: '/Recoil/todolist',
     category: 'State Management',
     tech: 'Recoil',
   },
