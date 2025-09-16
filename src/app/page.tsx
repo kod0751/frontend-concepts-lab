@@ -52,6 +52,13 @@ const examples = [
     tech: 'JavaScript',
   },
   {
+    title: 'useEffect Hook',
+    description: 'React useEffect 훅 생명주기와 사이드 이펙트 관리',
+    path: '/useeffect',
+    category: 'React Hooks',
+    tech: 'React',
+  },
+  {
     title: 'useMemo Hook',
     description: 'React useMemo 훅 최적화 예제',
     path: '/ReactHooks/useMemo',
