@@ -54,7 +54,7 @@ const examples = [
   {
     title: 'useEffect Hook',
     description: 'React useEffect 훅 생명주기와 사이드 이펙트 관리',
-    path: '/useeffect',
+    path: '/ReactHooks/useEffect',
     category: 'React Hooks',
     tech: 'React',
   },
