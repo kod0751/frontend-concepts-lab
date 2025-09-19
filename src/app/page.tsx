@@ -114,7 +114,7 @@ export default function HomePage() {
             </div>
             <div className="inline-flex items-center gap-2 text-sm font-['NanumSquareNeo'] text-muted-foreground bg-muted/50 px-4 py-2 rounded-full">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              총 {examples.length}개의 실습 예제
+              총 {examples.length}개의 예제
             </div>
           </div>
         </div>
