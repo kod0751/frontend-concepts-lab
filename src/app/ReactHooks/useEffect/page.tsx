@@ -13,7 +13,7 @@ import {
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { ArrowLeft, Play, Pause, RotateCcw } from 'lucide-react';
+import { Play, Pause, RotateCcw } from 'lucide-react';
 
 interface UserData {
   id: number;
