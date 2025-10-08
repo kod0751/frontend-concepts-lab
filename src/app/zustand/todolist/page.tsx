@@ -163,7 +163,7 @@ export default function ZustandTodoListPage() {
                   variant="outline"
                   size="sm"
                   onClick={clearCompleted}
-                  className="text-destructive hover:text-destructive bg-transparent"
+                  className="text-destructive hover:text-destructive bg-red-500/10 border-destructive/20 hover:bg-destructive/10"
                 >
                   완료된 항목 삭제
                 </Button>
