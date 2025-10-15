@@ -52,6 +52,13 @@ const examples = [
     tech: 'JavaScript',
   },
   {
+    title: 'this 바인딩 / 화살표 함수',
+    description: 'this 키워드와 화살표 함수의 동작 방식 이해',
+    path: '/javascript/this-binding',
+    category: 'JavaScript Concepts',
+    tech: 'JavaScript',
+  },
+  {
     title: 'useEffect Hook',
     description: 'React useEffect 훅 생명주기와 사이드 이펙트 관리',
     path: '/ReactHooks/useEffect',
